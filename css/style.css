@@ -22,16 +22,19 @@
     background-image: url("../images/page1.jpg");
     object-fit: contain;
     background-size: cover;
+    z-index: 0; 
+    position: relative;
 
 }
 
 nav{
+    position: relative;
     display: flex;
     align-items: center;
     height: 11vh;
-    justify-content: center;
+    justify-content: space-around;
     gap: 35px;
-    margin-right: 14vw;
+    
 }
 
 .nav-list{
@@ -41,6 +44,21 @@ nav{
     font-size: 15px;
     font-family: 'D-DIN';
     list-style-type: none;
+}
+
+.nav-list2{
+    list-style-type: none;
+    font-family: 'D-DIN';
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.ham-menu{
+    height: 20px;
+    cursor: pointer;
 }
 
  li{
@@ -79,6 +97,7 @@ nav{
 
 .page1 > nav > img {
     height: 26%;
+    
 }
 
 
@@ -88,6 +107,8 @@ nav{
     background-image: url("../images/page2.jpg");
     object-fit: contain;
     background-size: cover;
+    z-index: 0; 
+    position: relative;
 
 }
 .page3{
@@ -96,6 +117,8 @@ nav{
     background-image: url("../images/page3.jpg");
     object-fit: contain;
     background-size: cover;
+    z-index: 0; 
+    position: relative;
 
 }
 .page4{
@@ -104,6 +127,8 @@ nav{
     background-image: url("../images/page4.jpg");
     object-fit: contain;
     background-size: cover;
+    z-index: 0; 
+    position: relative;
 
 }
 .page5{
@@ -112,5 +137,7 @@ nav{
     background-image: url("../images/page5.jpg");
     object-fit: contain;
     background-size: cover;
+    z-index: 0; 
+    position: relative;
 }
 
