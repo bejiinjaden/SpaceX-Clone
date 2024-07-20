@@ -141,3 +141,12 @@ nav{
     position: relative;
 }
 
+.sidebar{
+    position: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    
+}
+
