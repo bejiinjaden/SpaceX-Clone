@@ -12,10 +12,13 @@
 </head>
 <body>
     <div class="container">
-        <div class="page1" >
-            <nav>
-                <img src="images/spacex-logo-black-and-white.png" class="logo">
+
+        <nav>
+        <div class="aligner-logo">
+            <img src="images/spacex-logo-black-and-white.png" class="logo">
+                
                 <ul class="nav-list">
+                    
                     <li>FALCON 9</li>
                     <li>FALCON HEAVY</li>
                     <li>DRAGON</li>
@@ -25,21 +28,24 @@
                     <li>STARSHIELD</li>
                     <li>STARLINK</li>
                 </ul>
+                </div>
                 <ul class="nav-list2">
                     <li>SHOP</li>
                     
                     <input type="checkbox" id = "sidebar-active">
 
                     <label for="sidebar-active">
-                        <img src="images/menu.png" class="ham-menu" >
+                        <img src="images/menu.png" class="ham-menu menu-btn" >
                     </label>
 
                 </ul>
             </nav>
+        <div class="page1" >
+            
 
             <div class="sidebar">
                 <label for="sidebar-active">
-                <img src="images/close.png" class="close-btn">
+                <img src="images/close.png" class="close-btn menu-btn">
                 </label>
 
                 <a>MISSON</a>
@@ -105,5 +111,7 @@
             </div>
         </div>
     </div>
+
+    <script src="src/main.js"></script>
 </body>
 </html>
