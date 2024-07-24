@@ -1,4 +1,4 @@
-const menuBtn = document.querySelector('.menu-btn');
+const menuBtn = document.querySelectorAll('.menu-btn');
 const closeBtn = document.querySelector('.close-btn')
 const sidebar = document.querySelector('.sidebar');
 const isSiderbarActive = document.getElementById("sidebar-active");
@@ -16,7 +16,7 @@ function isChecked() {
        
 }
 
-menuBtn.addEventListener('click',isChecked)
+menuBtn.forEach(btn => btn.addEventListener("click", isChecked));
 
 
 

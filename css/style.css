@@ -35,7 +35,7 @@ nav{
     align-items: center;
     height: 11vh;
     justify-content: space-between;
-    z-index: 2;
+    z-index: 1;
     width: 100vw;
     
 }
@@ -157,16 +157,42 @@ nav{
     position: relative;
 }
 
-.sidebar{
+.sidebar {
     position: fixed;
     color: white;
-    display: flex;
-    flex-direction: column;
     right: 0;
     background-color: black;
-    z-index: 4;
+    z-index: 1;
     height: 100vh;
-    display: none;
+    width: 23vw;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    line-height: 20px;
     
 }
+
+.sidebar *{
+    margin-right: 15%;
+    padding-top: 20px;
+}
+
+.sidebar > label > img{
+    margin-right: 0;
+}
+
+.sidebar > a{
+    display: block;
+    
+}
+
+.sidebar > a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px; /* Thickness of the underline */
+            background-color: white; /* Color of the underline */
+        }
 
