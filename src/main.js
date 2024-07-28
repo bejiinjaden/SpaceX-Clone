@@ -5,18 +5,28 @@ const isSiderbarActive = document.getElementById("sidebar-active");
 console.log(isSiderbarActive.checked)
 
 function isChecked() {
-   /* if (!isSiderbarActive.checked) {
+    if (!isSiderbarActive.checked) {
         sidebar.style.display = "block"
         console.log(isSiderbarActive.checked)
     } else {
-        sidebar.style.display = "none"
-    }*/
+        setTimeout(function() {
+             sidebar.style.display = "none"
+        },500)
+        
+    }
+
     
-    !isSiderbarActive.checked ? sidebar.style.display = "block" : sidebar.style.display = "none"
+    
+   // !isSiderbarActive.checked ? sidebar.style.display = "block" : sidebar.style.display = "none"
        
 }
 
 menuBtn.forEach(btn => btn.addEventListener("click", isChecked));
+
+closeBtn.addEventListener('click', () => {
+    sidebar.style.animationName = 'sidebar-animation-close';
+    sidebar.style.animationDuration = '0.2s'
+})
 
 
 
