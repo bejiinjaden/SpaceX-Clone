@@ -78,15 +78,8 @@ section button:hover {
   cursor: pointer;
   margin-bottom: 30px;
   padding-top: 30px;
-  animation-name: sidebar-animation-close;
-  animation-duration: 0.2s;
+  
 }
 
-@keyframes sidebar-animation-close {
-    0% {
-        width: 23vw;}
-    100% {
-        width: 0;
-    }
-}
+
 

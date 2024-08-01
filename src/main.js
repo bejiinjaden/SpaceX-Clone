@@ -8,11 +8,17 @@ function isChecked() {
     if (!isSiderbarActive.checked) {
         sidebar.style.display = "block"
         console.log(isSiderbarActive.checked)
-    } else {
-        setTimeout(function() {
-             sidebar.style.display = "none"
-        },500)
+        sidebar.classList.remove('sidebar-close')
+        sidebar.classList.add('sidebar-open');
         
+    } else {
+        
+        sidebar.classList.remove('sidebar-open')
+        sidebar.classList.add('sidebar-close');
+        setTimeout(function () {
+             sidebar.style.display = "none"
+
+        },200)  
     }
 
     
@@ -23,10 +29,12 @@ function isChecked() {
 
 menuBtn.forEach(btn => btn.addEventListener("click", isChecked));
 
-closeBtn.addEventListener('click', () => {
+/*closeBtn.addEventListener('click', () => {
     sidebar.style.animationName = 'sidebar-animation-close';
     sidebar.style.animationDuration = '0.2s'
-})
+   
+    console.log(sidebar.style.display)
+})*/
 
 
 
