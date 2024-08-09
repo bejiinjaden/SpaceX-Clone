@@ -2,7 +2,8 @@ const menuBtn = document.querySelectorAll('.menu-btn');
 const closeBtn = document.querySelector('.close-btn')
 const sidebar = document.querySelector('.sidebar');
 const isSiderbarActive = document.getElementById("sidebar-active");
-console.log(isSiderbarActive.checked)
+const navbar = document.querySelector('.navbar');
+console.log(isSiderbarActive.checked);
 
 function isChecked() {
     if (!isSiderbarActive.checked) {
@@ -35,6 +36,38 @@ menuBtn.forEach(btn => btn.addEventListener("click", isChecked));
    
     console.log(sidebar.style.display)
 })*/
+
+/*const scroll = new LocomotiveScroll({
+    el:document.querySelector('[')
+})*/
+
+const body = document.body;
+let lastscroll = 0
+
+window.addEventListener('scroll', () => {
+    let currentscroll = window.scrollY
+    console.log("current : ", currentscroll)
+     
+    console.log("lastscroll : ", lastscroll);
+    if (currentscroll !== 0) {
+        navbar.classList.remove('navbar-appear')
+        navbar.classList.add('navbar-disappear')
+    }
+    
+    if (currentscroll <= 100) {   
+        navbar.style.backgroundColor = 'transparent'
+    }
+    
+    if (lastscroll > currentscroll) {
+        navbar.style.backgroundColor = 'black'
+        navbar.classList.remove('navbar-disappear')
+        navbar.classList.add('navbar-appear')
+}
+    lastscroll = currentscroll
+})
+
+
+
 
 
 

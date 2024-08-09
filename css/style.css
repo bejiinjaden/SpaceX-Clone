@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior:smooth;
+}
 @font-face {
     font-family: 'D-DIN-Bold';
     src: url('../fonts/D-DIN-Bold.woff') format('woff');
@@ -45,6 +48,26 @@ nav{
     justify-content: space-between;
     z-index: 1;
     width: 100vw;
+    opacity: 1;
+    transition: background-color 1s;  
+}
+
+.navbar-disappear{
+opacity: 0;
+transition: opacity 1s;
+}
+
+.navbar-appear{
+    opacity: 1;
+}
+
+@keyframes navbar-animation {
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform: translateY(-100%);
+    }
     
 }
 
@@ -225,9 +248,9 @@ animation-name: sidebar-animation;
 }
 
 .sidebar > a > label > img {
-    display: block; /* Make sure the image is block-level */
-    margin-left: auto; /* Align the image to the right */
-    margin-right: 0; /* Ensure there's no margin on the right */
+    display: block; 
+    margin-left: auto; 
+    margin-right: 0; 
 }
 
 .sidebar > a:not(:first-child)::after {
@@ -236,8 +259,8 @@ animation-name: sidebar-animation;
     right: 0;
     bottom: 0;
     width: 60%;
-    height: 0.8px; /* Thickness of the underline */
-    background-color:rgb(51, 51, 51); /* Color of the underline */
+    height: 0.8px; 
+    background-color:rgb(51, 51, 51); 
 }
 
 .scroll_img{
@@ -246,21 +269,21 @@ animation-name: sidebar-animation;
     height: 50px;
     right: 50%; 
     animation-name: scroll_animation;
-    animation-duration: 1.4s;
+    animation-duration: 1.9s;
     animation-iteration-count: infinite;
     
 }
 
 @keyframes scroll_animation{
     0%{
-    bottom: 30px;
+    bottom: 60px;
     opacity: 1;
     }
     50%{
         opacity: 0.5;
     }
     100%{
-        bottom: 20px;
+        bottom: 40px;
         opacity: 0.0;
     }
 }
