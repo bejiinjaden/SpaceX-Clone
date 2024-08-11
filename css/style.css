@@ -289,3 +289,32 @@ animation-name: sidebar-animation;
 }
 
 
+footer{
+    height:10vh;
+    background-color: black;
+    bottom: 0;
+    color: white;
+    font-family: 'D-DIN-Bold';
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p > * {
+margin-left: 25px;
+}
+
+footer > p > span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer > p  > a{
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+footer > p  > a:hover{
+    color: #858585;;
+}
+
+

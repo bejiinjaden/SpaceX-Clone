@@ -67,6 +67,11 @@ window.addEventListener('scroll', () => {
 })
 
 
+const date = new Date();
+let year = date.getFullYear()
+
+document.querySelector('.copyright').innerHTML = `SPACEX &copy; ${year}`
+
 
 
 
