@@ -25,7 +25,6 @@ html{
 }
 .container{
     height: 4526px;
-    
 }
 
 
@@ -87,6 +86,7 @@ transition: opacity 1s;
     list-style-type: none;
 }
 
+
 .logo {
     height: 1.8rem;
     margin-right: 30px;
@@ -145,47 +145,28 @@ transition: opacity 1s;
     color: white; 
 }
 
+.page2 {    
+    background-image: url("../images/page2.jpg");
+}
 
+.page2 , .page3 ,.page4 , .page5 {
 
-
-.page2{
     height: 900px;
     width: 100%;
-    background-image: url("../images/page2.jpg");
     object-fit: contain;
     background-size: cover;
     z-index: 0; 
     position: relative;
 
 }
-.page3{
-    height: 900px;
-    width: 100%;
-    background-image: url("../images/page3.jpg");
-    object-fit: contain;
-    background-size: cover;
-    z-index: 0; 
-    position: relative;
-
+.page3{   
+   background-image: url("../images/page3.jpg");
 }
 .page4{
-    height: 900px;
-    width: 100%;
     background-image: url("../images/page4.jpg");
-    object-fit: contain;
-    background-size: cover;
-    z-index: 0; 
-    position: relative;
-
 }
 .page5{
-    height: 900px;
-    width: 100%;
-    background-image: url("../images/page5.jpg");
-    object-fit: contain;
-    background-size: cover;
-    z-index: 0; 
-    position: relative;
+    background-image: url("../images/page5.jpg"); 
 }
 
 .sidebar {
@@ -262,6 +243,38 @@ animation-name: sidebar-animation;
     height: 0.8px; 
     background-color:rgb(51, 51, 51); 
 }
+
+.responsive-elements-sidebar > a:hover{
+    color: #a7a5a5;;
+}
+
+.responsive-elements-sidebar > a {
+    width: 100%;
+    line-height: 40px;
+    display: block;
+    font-family: D-DIN;
+    text-align: right;
+    margin-top: 7px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: color 0.4s;
+}
+
+.responsive-elements-sidebar > a::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 60%;
+    height: 0.8px; 
+    background-color:rgb(51, 51, 51); 
+}
+
+.responsive-elements-sidebar{
+    display: none;
+}
+
 
 .scroll_img{
     position: absolute;
