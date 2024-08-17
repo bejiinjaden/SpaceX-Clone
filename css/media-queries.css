@@ -1,0 +1,64 @@
+@media (max-width:1000px) {
+
+    .aligner-logo > img{
+        margin: 0;
+    }
+    .nav-list{
+        display: none;
+    }
+
+    nav{
+        justify-content: center;
+    }
+
+    .nav-list2 > li{
+        display: none;
+    }
+
+   
+    .ham-menu{
+        position: absolute;
+        height: 20%;
+        
+        right: 7%;
+    }
+    
+    .responsive-elements-sidebar{
+        display: block;
+    }
+
+    .sidebar{
+        width: 70vw;
+       
+    }
+    .sidebar-open{
+animation-name: sidebar-animation;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;  
+}
+
+    .sidebar-close{
+    animation-name: sidebar-animation-close;
+    animation-duration: 0.4s;
+    animation-timing-function: linear; 
+    width: 0;
+    
+}
+    @keyframes sidebar-animation {
+    0% {
+        width: 0;}
+    100% {
+        width: 70vw;
+    }
+}
+
+@keyframes sidebar-animation-close {
+    0% {
+        width: 70vw;}
+    100% {
+        width: 0;
+    }
+}
+
+
+}
