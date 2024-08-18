@@ -1,5 +1,14 @@
 @media (max-width:1200px) {
 
+    .page1 , .page2 , .page3 , .page4 , .page5{
+         background-repeat: no-repeat;
+       
+         background-size: cover;  /* Ensures the image covers the whole screen */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center center; 
+    
+    }
+
     .aligner-logo > img{
         margin: 0;
     }
