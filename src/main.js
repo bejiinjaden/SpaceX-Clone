@@ -56,6 +56,7 @@ window.addEventListener('scroll', () => {
     
     if (currentscroll <= 100) {   
         navbar.style.backgroundColor = 'transparent'
+        
     }
     
     if (lastscroll > currentscroll) {
