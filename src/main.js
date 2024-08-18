@@ -19,7 +19,7 @@ function isChecked() {
         setTimeout(function () {
              sidebar.style.display = "none"
 
-        },400)  
+        },300)  
     }
 
     

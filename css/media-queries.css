@@ -7,12 +7,21 @@
         display: none;
     }
 
+    .sub-title{
+        font-size: 40px;
+    }
+
     nav{
         justify-content: center;
     }
 
     .nav-list2 > li{
         display: none;
+    }
+
+
+    .scroll_img{
+        right: 45%;
     }
 
    
@@ -33,13 +42,13 @@
     }
     .sidebar-open{
 animation-name: sidebar-animation;
-    animation-duration: 0.4s;
+    animation-duration: 0.3s;
     animation-timing-function: linear;  
 }
 
     .sidebar-close{
     animation-name: sidebar-animation-close;
-    animation-duration: 0.4s;
+    animation-duration: 0.3s;
     animation-timing-function: linear; 
     width: 0;
     
